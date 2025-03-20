@@ -8,16 +8,13 @@ For user convenience, the provided scripts generate **low-resolution meshes** by
 
 **Converting Mesh for OpenFOAM**
 
-1. Convert the Gmsh mesh to OpenFOAM format using gmshToFoam:
-2. gmshToFoam jet_mesh.msh
-3. Modify the boundary file inside constant/polyMesh to ensure proper boundary definitions.
-4. Run checkMesh to verify the conversion:
-5. checkMesh
+1. gmshToFoam jet_mesh.msh
+2. Modify the boundary file inside constant/polyMesh to ensure proper boundary definitions.
+3. Run checkMesh to verify the conversion
 
 **Converting Mesh for Nek5000**
 
-1. Convert the .msh file to Nek5000's re2 format using gmsh2nek:
-2. gmsh2nek jet_mesh.msh jet_mesh
-3. The output files (.re2 and .usr) can be used in Nek5000 for spectral element simulations.
+1. gmsh2nek jet_mesh.msh jet_mesh
+2. Modify .usr to set the boundary conditions
 
 </div>
