@@ -17,8 +17,6 @@ Before using this script, ensure you have the following installed:
 - **[OpenFOAM](https://openfoam.org/)** (if using the mesh for OpenFOAM simulations)
 - **[Nek5000](https://nek5000.mcs.anl.gov/)** (if using the mesh for Nek5000 simulations)
 
----
-
 ## Script Overview
 
 This Gmsh script is structured into several sections:
@@ -48,8 +46,6 @@ This Gmsh script is structured into several sections:
 ### 🔹 Boundary Definitions
 
 - Assigns **physical boundary names** for solvers (inlet, outlet, walls, pipe walls, etc.).
-
----
 
 ## How to Use the Script
 
