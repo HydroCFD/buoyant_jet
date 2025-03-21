@@ -1,4 +1,8 @@
-<strong style="font-size: 20px;">🚧 This repository is under construction and will be completed later. 🚧</strong>
+🚧 #This repository is under construction and will be completed later. 🚧
+🚧 #This repository is under construction and will be completed later. 🚧
+🚧 #This repository is under construction and will be completed later. 🚧
+
+# This repository is under construction and will be completed later.
 
 <div align="justify">
 
