@@ -1,7 +1,5 @@
 # ❗ Note: This mesh is for training purposes, and adjust the refinements based on the need!
 
-# Mesh for Inclined Dense Jets
-
 ❗ Note: The mesh is initially generated in a **vertical orientation**.
 
 ### **Rotating the Mesh to a 60° Inclination**
