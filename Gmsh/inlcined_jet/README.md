@@ -2,7 +2,7 @@
 
 # Mesh for Inclined Dense Jets
 
-This repository contains `jet_mesh.geo`, a **Gmsh script** for generating a structured **nondimensional mesh** for an **inclined dense jet**. The mesh is initially generated in a **vertical orientation**.
+❗ Note: The mesh is initially generated in a **vertical orientation**.
 
 ### **Rotating the Mesh to a 60° Inclination**
 
