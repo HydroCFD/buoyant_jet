@@ -19,8 +19,6 @@ z1 = 40 * side_constant;        // Distance from the center to the sides (scaled
 z2 = 1.5;                       // Width of the side openings in the Z-direction (modify with caution)
 //////////////////////// End ////////////////////////
 
-
-
 ////////////////// Extrude Constants //////////////////
 down1 = -15 * scale;               // Length of the pipe section (scaled, 7.5 in nondimensional units)
 down2 = -60 * scale;               // Length of the downward mesh extension (scaled)
@@ -56,7 +54,6 @@ fex1 = 190 * scale;      // Extrusion distance for the front region (scaled)
 fex1_ex = 100 * scale;   // Additional extrusion distance for the front region (scaled)
 fex2 = 65 * scale;       // Extrusion distance for the back region (scaled)
 //////////////////////// End ////////////////////////
-
 
 ////////////////// Discretization Parameters //////////////////
 // Number of divisions along different regions of the mesh
