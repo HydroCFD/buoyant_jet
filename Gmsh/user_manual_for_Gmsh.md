@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This repository contains a **Gmsh script** for generating structured computational meshes for various **jet configurations**. The mesh is created in **nondimensional mode**, meaning the **jet diameter is set as the characteristic length scale equal to 1**.
+This repository contains a **Gmsh script** for generating structured computational meshes for a simple vertical **jet configuration**. The mesh is created in **nondimensional mode**, meaning the **jet diameter is set as the characteristic length scale equal to 1**.
 
 The generated mesh is **compatible with**:
 
-- **Nek5000** (high-fidelity spectral-element simulations)
 - **OpenFOAM** (finite volume CFD simulations)
+- **Nek5000** (high-fidelity spectral-element simulations)
 
----
+-
 
 ## Prerequisites
 
