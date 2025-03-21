@@ -79,27 +79,13 @@ To generate a **3D mesh**, **uncomment**:
 Mesh 3;
 ```
 
-### **3️⃣ Ensuring Mesh Quality**
-
-- The `Coherence;` command removes **duplicate nodes** and improves mesh consistency.
-
-### **4️⃣ Setting the Mesh File Format**
-
-- The mesh is saved in **version 2** for solver compatibility:
-
-```cpp
-Mesh.MshFileVersion = 2;
-```
-
----
-
 ## Using the Mesh in OpenFOAM
 
 To use the generated mesh in **OpenFOAM**, follow these steps:
 
 1. **Convert `.msh` to OpenFOAM format**:
    ```bash
-   gmshToFoam mesh.msh
+   gmshToFoam jet_mesh.msh
    ```
 2. **Check the mesh for consistency**:
    ```bash
@@ -114,9 +100,8 @@ To use the generated mesh in **OpenFOAM**, follow these steps:
 
 To use the mesh in **Nek5000**, follow these steps:
 
-1. Convert the `.msh` file to `.re2` format (use `gmsh2nek` or `visit`).
-2. Ensure **correct boundary conditions** are assigned.
-3. Run **Nek5000 pre-processing tools** for partitioning and initialization.
+1. Convert the `.msh` file using `gmsh2nek`.
+2. Ensure **correct boundary conditions** are assigned on .usr.
 
 ---
 
@@ -139,80 +124,12 @@ To use the mesh in **Nek5000**, follow these steps:
 
 ---
 
-## Best Practices
-
-✅ Always **check the mesh** before using it in simulations:
-
-```bash
-checkMesh
-```
-
-✅ Use **`Recombine Surface`** to generate structured **quadrilateral** elements.
-✅ For **high-resolution simulations**, refine the `np` values.
-✅ **Maintain the nondimensional scale** (jet diameter = 1) for consistency.
-
----
-
-## Troubleshooting
-
-### ❌ **Mesh Not Generating Correctly**
-
-🔹 Ensure `Mesh 3;` is uncommented for **3D mesh generation**.
-🔹 Run Gmsh in debug mode:
-
-```bash
-gmsh -3 mesh.geo -verbose
-```
-
-### ❌ **OpenFOAM Mesh Conversion Fails**
-
-🔹 Ensure the `.msh` file is in **version 2** (`Mesh.MshFileVersion = 2`).
-🔹 Remove **high-order elements** if necessary.
-
-### ❌ **Nek5000 Mesh Issues**
-
-🔹 Check the `.re2` file for **boundary condition assignments**.
-🔹 Ensure the mesh is **structured and well-discretized**.
-
----
-
-## 📌 Summary
-
-This Gmsh script provides a **high-quality structured mesh** for **jet flow simulations**.
-By following this guide, you can efficiently generate meshes and adapt them for **OpenFOAM and Nek5000**.
-
-For **advanced modifications**, adjust **domain size, extrusion parameters, and mesh resolution** as needed.
-
----
-
-### 🚀 **Contributing**
-
-Feel free to **open an issue** or **submit a pull request** if you find a bug or want to suggest an improvement!
-
----
-
-### 📝 **License**
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
-
----
-
 ### 📩 **Contact**
 
-For questions or support, feel free to **open an issue** or contact me via **[GitHub Discussions](https://github.com/yourusername/yourrepo/discussions)**.
+<!-- For questions or support, feel free to **open an issue** or contact me via **[GitHub Discussions](https://github.com/yourusername/yourrepo/discussions)**. -->
+
+For questions or support, feel free to contact me.
 
 ---
 
 🚀 **Happy Meshing!**
-
-```
-
-### **Why This README Works Well for GitHub:**
-✅ **Uses Markdown formatting** (headers, lists, and code blocks) for easy readability.
-✅ **Step-by-step instructions** for both **GUI and CLI users**.
-✅ **Common troubleshooting steps** for debugging.
-✅ **Customization guide** for modifying the mesh.
-✅ **Best practices** to ensure mesh quality.
-✅ **License and contact information** for collaboration.
-
-```
