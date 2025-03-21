@@ -10,8 +10,6 @@ By default, the mesh is created **vertically**. To tilt the jet to **60 degrees*
 rotateMesh "(1 0 0)" "(0.866 -0.5 0)"
 ```
 
-````
-
 This transformation rotates the mesh around the **X-axis**, aligning the jet at a **60-degree inclination**.
 
 The generated mesh is **compatible with OpenFOAM and Nek5000** for **high-fidelity jet flow simulations**.
@@ -20,4 +18,3 @@ The generated mesh is **compatible with OpenFOAM and Nek5000** for **high-fideli
 
 This description provides a **concise yet informative** introduction while including the essential transformation command for proper jet alignment. 🚀 Let me know if you'd like any refinements!
 ```
-````
