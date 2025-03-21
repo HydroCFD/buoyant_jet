@@ -1,6 +1,8 @@
-# ❗ Note: This mesh is for training purposes! Adjust the refinements as needed.
+# ❗ Note: This mesh is for training purposes!
 
-❗ **Important:** This script generates the mesh in a **vertical orientation**. Rotate it to the desired angle before use.
+**Adjust the sizes and refinements as needed**.
+
+**Important:** This script generates the mesh in a **vertical orientation**. Rotate it to the desired angle before use.
 
 ### **Rotating the Mesh to a 60° Inclination**
 
