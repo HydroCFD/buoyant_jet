@@ -1,5 +1,4 @@
 /////////////////////// Constants ///////////////////////
-
 scale = 0.5;                                     // Global scaling factor for the entire geometry (do not change)
 alpha = Cos(Pi/4);                               // Cosine of 45 degrees (used for rotations)(do not change)
 beta = Sin(Pi/4);                                // Sine of 45 degrees (used for rotations)(do not change)
@@ -13,19 +12,16 @@ side_constant = 2.35702261;                      // Geometric scaling factor for
 ///////////////////////// End of Constants ///////////////////////
 
 ////////////////// First Box Constants //////////////////
-
 x1_1 = 16;                      // X-position for the right side of the jet
 x1 = x1_1;                      // X-position for the left side of the jet (same as right side)
 x2 = 1.5;                       // Width of the side openings (modify with caution)
 z1 = 40 * side_constant;        // Distance from the center to the sides (scaled, do not change)
 z2 = 1.5;                       // Width of the side openings in the Z-direction (modify with caution)
-
 //////////////////////// End ////////////////////////
 
 
 
 ////////////////// Extrude Constants //////////////////
-
 down1 = -15 * scale;               // Length of the pipe section (scaled, 7.5 in nondimensional units)
 down2 = -60 * scale;               // Length of the downward mesh extension (scaled)
 top = 130;                         // Elevation of the top boundary for box 1
@@ -53,21 +49,16 @@ t5 = 1.05;
 t6 = 1.2;  
 t7 = 1.15;  
 t8 = 1;  // Uniform progression (no refinement)
-
 //////////////////////// End ////////////////////////
 
 ////////////////// Front and Back Extrude Constants //////////////////
-
 fex1 = 190 * scale;      // Extrusion distance for the front region (scaled)
 fex1_ex = 100 * scale;   // Additional extrusion distance for the front region (scaled)
-
 fex2 = 65 * scale;       // Extrusion distance for the back region (scaled)
-
 //////////////////////// End ////////////////////////
 
 
 ////////////////// Discretization Parameters //////////////////
-
 // Number of divisions along different regions of the mesh
 np1 = 18;   // Number of divisions in the middle of the circular region
 np2 = 5;    // Number of divisions in the first outer layer of the circle
@@ -75,23 +66,14 @@ np3 = 5;    // Number of divisions in the second outer layer of the circle
 np4 = 100;  // Number of divisions along the side boundaries
 np5 = 50;   // Number of divisions along the front and back of the circular region
 npw = 3;    // Number of divisions for pipe walls
-
 ////////////////// Mesh Progression Factors //////////////////
-
 // Progression factors for mesh refinement (used in Transfinite Curve settings)
 comp1 = 0.98;     // Compression factor (slightly decreases element size)
 comp2 = 1.02;     // Expansion factor (slightly increases element size)
 
 comp1_1 = 0.97;   // Slightly stronger compression factor for refinement
 comp2_1 = 1.03;   // Slightly stronger expansion factor for refinement
-
 //////////////////////// End ////////////////////////
-
-
-
-
-
-
 
 //////////////////////// points ////////////////////////
 Point(1) = {0, 0, 0};
@@ -140,9 +122,7 @@ Point(23) = {x1_1*xyz2[0],xyz2[1],z2*xyz2[2]};
 Point(24) = {x1_1*xyz3[0],xyz3[1],z2*xyz3[2]};
 Point(25) = {x1*xyz4[0],xyz4[1],z2*xyz4[2]};
 
-
 //////////////////////// lines ////////////////////////
-
 Circle(1) = {2, 28, 3};
 Circle(2) = {3, 27, 4};
 Circle(3) = {4, 29, 5};
@@ -251,11 +231,8 @@ Plane Surface(16) = {16};
 Curve Loop(17) = {21, 29, -22, -9};
 Plane Surface(17) = {17};
 
-
 //////////////////////// Discretization Settings ////////////////////////
-
 // Applying transfinite (structured) meshing to curves with specified divisions
-
 Transfinite Curve{1:4} = np1;    // Middle section of the circular region
 Transfinite Curve{5:8} = np1;    // Additional inner circular curves
 Transfinite Curve{41:44} = np1;  // Outer circular curves
@@ -277,19 +254,7 @@ Transfinite Curve{37,28,27,-40,-36,24,23,33} = np5 Using Progression 1.025;
 
 Transfinite Surface{1:22};  
 Recombine Surface{1:22};  
-
 //////////////////////// End ////////////////////////
-
-
-
-
-
-
-
-
-
-
-
 
 //////////////////////// extrude constants////////////////////////
 ///////////////////////// do not change /////////////////////////
@@ -308,7 +273,6 @@ di2[]={(0.05^t2)*y,(0.1^t2)*y,(0.15^t2)*y,(0.2^t2)*y,(0.25^t2)*y,
 	   
 ///////////////////////// do not change /////////////////////////
 
-
 d3[]={xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,
      xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,
      xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3,xx3};
@@ -321,7 +285,6 @@ di3[]={(0.0333333^t3)*y,(0.0666666^t3)*y,(0.1^t3)*y,(0.1333333^t3)*y,(0.1666666^
       (0.8666666^t3)*y,(0.9^t3)*y,(0.9333333^t3)*y,(0.9666666^t3)*y,1*y};
 
 ///////////////////////// do not change /////////////////////////
-
 
 d4[]={xx4,xx4,xx4,xx4,xx4,xx4,xx4,xx4,xx4,xx4,
      xx4,xx4,xx4,xx4,xx4,xx4,xx4,xx4,xx4,xx4,
@@ -365,7 +328,6 @@ d6[]={xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,
      xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,
      xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6,xx6};
 
-
 di6[]={ 
       (0.0166667^t6)*y, (0.0333334^t6)*y, (0.05^t6)*y, (0.0666667^t6)*y, (0.0833334^t6)*y, 
       (0.1^t6)*y, (0.1166667^t6)*y, (0.1333334^t6)*y, (0.15^t6)*y, (0.1666667^t6)*y, 
@@ -408,11 +370,7 @@ di7[]={
       (0.9428571^t7)*y, (0.9571429^t7)*y, (0.9714286^t7)*y, (0.9857143^t7)*y, (1*y)
 };
 
-
-
-
 ///////////////////////// Extrude Operations /////////////////////////
-
 // Extrude base surfaces upwards to form the main geometry
 Extrude {0, yy, 0} {Surface{1:22}; Layers{ d5[], di5[] }; Recombine;}
 
@@ -443,10 +401,6 @@ Layers {d2[], di2[]}; Recombine;}
 
 ///////////////////////// End of Extrude Operations /////////////////////////
 
-
-
-
-
 ///////////////////////// Boundary Naming /////////////////////////
 Physical Surface("inlet", 2001) = {532, 554, 620, 598, 576, 664, 686, 708, 642};  
 Physical Surface("outlet", 2002) = {1236,1214,1258};  
@@ -460,9 +414,7 @@ Physical Surface("pipewall", 2009) = {949, 817, 905, 861, 6, 7, 8, 9, 655, 633, 
 
 Physical Volume("flowDomain", 3000) = {1:86};  
 Recombine Volume {1:86};  
-
 ///////////////////////// End of Boundary Naming /////////////////////////
-
 
 ///////////////////////// Mesh Generation Settings /////////////////////////
 Mesh 2;                   // Generate a 2D mesh
@@ -470,4 +422,3 @@ Mesh 2;                   // Generate a 2D mesh
 Coherence;                // Ensure geometric coherence (merges duplicate nodes and improves mesh consistency)
 Mesh.MshFileVersion = 2;  // Set the mesh file format version to 2 
 ///////////////////////// End of Mesh Generation Settings /////////////////////////
-
