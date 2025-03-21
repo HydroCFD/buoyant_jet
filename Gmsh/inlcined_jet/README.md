@@ -13,3 +13,5 @@ rotateMesh "(1 0 0)" "(0.866 -0.5 0)"
 This transformation rotates the mesh around the **X-axis**, aligning the jet at a **60-degree inclination**.
 
 The generated mesh is **compatible with OpenFOAM**.
+
+# Note: This mesh is for training purposes, and you should adjust the refinements based on your needs`!`
