@@ -14,4 +14,4 @@ This transformation rotates the mesh around the **X-axis**, aligning the jet at 
 
 The generated mesh is **compatible with OpenFOAM**.
 
-# Note: This mesh is for training purposes, and you should adjust the refinements based on your needs`!`
+# ❗ Note: This mesh is for training purposes, and you should adjust the refinements based on your needs!
