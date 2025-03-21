@@ -9,8 +9,6 @@ The generated mesh is **compatible with**:
 - **OpenFOAM** (finite volume CFD simulations)
 - **Nek5000** (high-fidelity spectral-element simulations)
 
---
-
 ## Prerequisites
 
 Before using this script, ensure you have the following installed:
@@ -33,7 +31,7 @@ This Gmsh script is structured into several sections:
 
 ### 🔹 Box Dimensions
 
-- Defines the **bounding box** for the computational domain.
+- Defines the **bounding box** for around the jet.
 - Configures **jet boundaries, side openings, and distances**.
 
 ### 🔹 Extrusion Parameters
@@ -50,7 +48,6 @@ This Gmsh script is structured into several sections:
 ### 🔹 Boundary Definitions
 
 - Assigns **physical boundary names** for solvers (inlet, outlet, walls, pipe walls, etc.).
-- Defines the **fluid domain (flowDomain)** for OpenFOAM/Nek5000 compatibility.
 
 ---
 
@@ -60,7 +57,7 @@ This Gmsh script is structured into several sections:
 
 #### **Option 1: Using the Gmsh GUI**
 
-1. Open **Gmsh** and load the `mesh.geo` script.
+1. Open **Gmsh** and load the `jet_mesh.geo` script.
 2. Click **Mesh → Generate 3D**.
 3. Export the mesh as `.msh`.
 
