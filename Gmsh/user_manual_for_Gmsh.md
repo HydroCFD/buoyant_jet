@@ -60,10 +60,8 @@ This Gmsh script is structured into several sections:
 #### **Option 2: Using the Command Line**
 
 ```bash
-gmsh -3 mesh.geo
+gmsh -3 jet_mesh.geo
 ```
-
-````
 
 - This generates a `.msh` file.
 
@@ -217,4 +215,4 @@ For questions or support, feel free to **open an issue** or contact me via **[Gi
 ✅ **Best practices** to ensure mesh quality.
 ✅ **License and contact information** for collaboration.
 
-````
+```
