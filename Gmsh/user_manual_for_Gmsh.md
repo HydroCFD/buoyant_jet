@@ -94,16 +94,12 @@ To use the generated mesh in **OpenFOAM**, follow these steps:
 3. Modify **boundary conditions** in `constant/polyMesh/boundary` as needed.
 4. Run **OpenFOAM solvers** with the mesh.
 
----
-
 ## Using the Mesh in Nek5000
 
 To use the mesh in **Nek5000**, follow these steps:
 
 1. Convert the `.msh` file using `gmsh2nek`.
 2. Ensure **correct boundary conditions** are assigned on .usr.
-
----
 
 ## Customizing the Mesh
 
@@ -122,14 +118,10 @@ To use the mesh in **Nek5000**, follow these steps:
 - Modify `down1` and `down2` to **extend or shorten the pipe region**.
 - Adjust `fex1`, `fex2` for **front and back extrusions**.
 
----
-
 ### 📩 **Contact**
 
 <!-- For questions or support, feel free to **open an issue** or contact me via **[GitHub Discussions](https://github.com/yourusername/yourrepo/discussions)**. -->
 
 For questions or support, feel free to contact me.
 
----
-
-🚀 **Happy Meshing!**
+**Happy Meshing!**
