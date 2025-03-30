@@ -1,4 +1,6 @@
-# ❗❗❗ Note: This mesh is for training purposes adjust the sizes and refinements as needed ❗❗❗
+# ❗❗❗ Attention ❗❗❗
+
+# This mesh is for training purposes adjust the sizes and refinements as needed.
 
 **Important:** This script generates the mesh in a **vertical orientation**. Rotate it to the desired angle before use.
 
