@@ -1,21 +1,21 @@
-# 🌊 Desalination Jet Solver (Non-Dimensional Form)
+# Desalination Jet Solver (Non-Dimensional Form)
 
 This repository contains a **custom OpenFOAM solver** specifically developed for simulating **desalination outfalls** using a **non-dimensional formulation**. The solver is tailored for dense jet flows, where buoyancy and momentum interact significantly, as seen in brine discharges into ambient water bodies.
 
 ---
 
-## 🧪 Solver Overview
+## Solver Overview
 
 This solver is based on the Navier-Stokes equations and scalar transport in **non-dimensional form**, using:
 
-- **Reynolds number (\( Re \))**: Characterizing inertial vs. viscous forces.
-- **Froude number (\( Fr \))**: Capturing the ratio of inertial to buoyancy forces.
+- **Reynolds number \( Re \)**: Characterizing inertial vs. viscous forces.
+- **Froude number \( Fr \)**: Capturing the ratio of inertial to buoyancy forces.
 
 By working in a non-dimensional framework, this solver allows for **generalizable** and **scalable** analysis across different discharge configurations, flow regimes, and ambient conditions without being tied to a specific set of dimensional parameters.
 
 ---
 
-## 📘 Features
+## Features
 
 - Designed for **inclined dense jets**, such as those in desalination brine discharges.
 - Non-dimensional variables reduce complexity and enhance generalization.
@@ -24,7 +24,7 @@ By working in a non-dimensional framework, this solver allows for **generalizabl
 
 ---
 
-## 🔧 OpenFOAM Compatibility
+## OpenFOAM Compatibility
 
 The solver is fully functional with:
 
@@ -37,7 +37,7 @@ Tested across these versions to ensure consistent behavior.
 
 ---
 
-## 🔬 Reference
+## Reference
 
 This solver and its methodology are based on the approach developed in:
 
@@ -46,7 +46,7 @@ Please cite this paper if you use the solver in your research.
 
 ---
 
-## 🧰 How to Compile
+## How to Compile
 
 1. Source the OpenFOAM environment for your version:
    ```bash
@@ -65,20 +65,20 @@ The executable will be generated in your `$FOAM_USER_APPBIN`.
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
-/DesalinationJetSolver/
+/pimpleDesalination/
 ├── Make/
 │   ├── files
 │   └── options
-├── DesalinationJetSolver.C
+├── pimpleDesalination.C
 ├── README.md
 ```
 
 ---
 
-## ▶️ Running a Simulation
+## Running a Simulation
 
 Prepare your case directory with standard OpenFOAM structure:
 
@@ -89,18 +89,18 @@ Prepare your case directory with standard OpenFOAM structure:
 Then run:
 
 ```bash
-DesalinationJetSolver
+pimpleDesalination
 ```
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Ensure input parameters are non-dimensional (e.g., velocity scaled by reference velocity, lengths by a reference length, etc.).
 - Adjust boundary conditions and turbulence models as needed for specific jet configurations (inclined, vertical, etc.).
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork, modify, and improve the solver. Issues and pull requests are welcome!
