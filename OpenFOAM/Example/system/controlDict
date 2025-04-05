@@ -1,0 +1,218 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+application     pisoDensityND2;
+startFrom       latestTime;
+startTime       0;
+stopAt          endTime;
+endTime         20000;
+deltaT          0.01;
+writeControl    adjustableRunTime;
+writeInterval   100;
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  6;
+writeCompression on;
+timeFormat      general;
+timePrecision   6;
+runTimeModifiable true;
+adjustTimeStep  yes;
+maxCo           1;
+
+functions
+{
+
+
+
+   #include "surface1"
+   #include "surface2"
+   #include "surface3"
+
+
+
+    fieldAverage1
+    {
+     type            fieldAverage;
+     libs            (fieldFunctionObjects);
+     enabled         true;
+     log             true;
+     timeStart       3000;
+     timeEnd         10000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            T
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+        );
+    }
+
+ subtract1
+ {
+     type            subtract;
+     libs            (fieldFunctionObjects);
+     fields          (U UMean);
+     result          UP;
+     enabled         true;
+     log             true;
+     timeStart       3001;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+ }
+
+ subtract2
+ {
+     type            subtract;
+     libs            (fieldFunctionObjects);
+     fields          (T TMean);
+     result          TP;
+     enabled         true;
+     log             true;
+     timeStart       3001;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+ }
+
+
+
+ multiply1
+ {
+     type    multiply;
+     libs    (fieldFunctionObjects);
+     fields          (UP TP);
+     result          UPTP;
+     enabled         true;
+     log             true;
+     timeStart       3020;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+
+ }
+
+
+
+    fieldAverage2
+    {
+     type            fieldAverage;
+     libs            (fieldFunctionObjects);
+     enabled         true;
+     log             true;
+     timeStart       3100;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+
+        fields
+        (
+            UP
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+            TP
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+            UPTP
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+
+        );
+    }
+
+
+
+
+
+ Q1
+ {
+     type            Q;
+     libs            (fieldFunctionObjects);
+     enabled         true;
+     log             true;
+     timeStart       0;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+ }
+
+
+
+
+ turbulenceFields1
+ {
+     type            turbulenceFields;
+     libs            (fieldFunctionObjects);
+     fields          (R devRhoReff);
+     field           R;
+
+     region          region0;
+     enabled         true;
+     log             true;
+     timeStart       0;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+ }
+
+
+
+ vorticity1
+ {
+     // Mandatory entries (unmodifiable)
+     type        vorticity;
+     libs        (fieldFunctionObjects);
+
+     // Optional (inherited) entries
+     field           U;
+     enabled         true;
+     log             true;
+     timeStart       0;
+     timeEnd         100000;
+     writeControl    adjustableRunTime;
+     writeInterval   100;
+ }
+
+
+
+
+
+}
+
+// ************************************************************************* //

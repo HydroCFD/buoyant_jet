@@ -46,15 +46,13 @@ This solver and its methodology are based on the approach developed in:
 **Comment on “Venturi nozzles for desalination brine discharges” [Amiri, N. S., Abessi, O., & Roberts, P. J., *Desalination*, Volume 573, 2024, 117193]**. _Desalination_, 574, 118105.  
 📄 [read here](https://doi.org/10.1016/j.desal.2024.118105)
 
-📌 _Please cite these papers if you use the solver in your research._
+Please cite these papers if you use the solver in your research.
 
----
-
-## How to Compile
+## How to Compile (# Replace X with your version)
 
 1. Source the OpenFOAM environment for your version:
    ```bash
-   source /opt/openfoamX/etc/bashrc  # Replace X with your version
+   source /opt/openfoamX/etc/bashrc
    ```
 2. Navigate to the solver directory:
    ```bash
@@ -102,9 +100,3 @@ pimpleDesalination
 
 - Ensure input parameters are non-dimensional (e.g., velocity scaled by reference velocity, lengths by a reference length, etc.).
 - Adjust boundary conditions and turbulence models as needed for specific jet configurations (inclined, vertical, etc.).
-
----
-
-## Contributing
-
-Feel free to fork, modify, and improve the solver. Issues and pull requests are welcome!
