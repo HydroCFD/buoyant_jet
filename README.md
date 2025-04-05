@@ -3,7 +3,7 @@
 This repository contains research materials related to my PhD thesis on buoyant jets, including thermal and desalination discharges.
 
 <p align="center">
-  <img src="images/temp.jpg" alt="Alt Text" width="600"/>
+  <img src="images/temp.jpg" alt="Alt Text" width="800"/>
   <br>
   <em> Scalar field of a jet.</em>
 </p>
