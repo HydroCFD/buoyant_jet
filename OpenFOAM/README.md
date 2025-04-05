@@ -37,7 +37,7 @@ Tested across these versions to ensure consistent behavior.
 
 ---
 
-## 🔬 References
+## References
 
 This solver and its methodology are based on the approach developed in:
 
