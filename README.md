@@ -8,9 +8,9 @@ The repository will include:
 
 - **Gmsh scripts** for mesh generation compatible with both **OpenFOAM** and **Nek5000**
 - A **non-dimensional OpenFOAM solver** along with practical simulation examples
-- **Nek5000 simulation cases** for various buoyant jet configurations
+- **Nek5000 simulation cases** for thermal buoyant jet
 - **Postprocessing codes** for both **OpenFOAM** and **Nek5000** results
-- **Experimental datasets** from **PIV** and **LIF** measurements
+- **Experimental datasets** and **Postprocessing codes** for **PIV** and **LIF** measurements
 
 ## **Contact**
 
