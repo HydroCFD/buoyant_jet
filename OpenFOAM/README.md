@@ -1,6 +1,6 @@
 # Desalination Jet Solver (Non-Dimensional Form)
 
-This repository contains a **custom OpenFOAM solver** specifically developed for simulating **desalination outfalls** using a **non-dimensional formulation**. The solver is tailored for dense jet flows, where buoyancy and momentum interact significantly, as seen in brine discharges into ambient water bodies.
+This repository contains a **custom OpenFOAM solver** developed for simulating **desalination outfalls** using a **non-dimensional formulation**. The solver is for dense jet flows, where buoyancy and momentum interact, as seen in brine discharges into ambient water bodies.
 
 ---
 
@@ -19,7 +19,7 @@ By working in a non-dimensional framework, this solver allows for **generalizabl
 
 - Designed for **inclined dense jets**, such as those in desalination brine discharges.
 - Non-dimensional variables reduce complexity and enhance generalization.
-- Captures jet trajectory, mixing, and dilution performance.
+- Captures jet trajectory, mixing, and dilution.
 - Compatible with a wide range of OpenFOAM versions (see below).
 
 ---
@@ -37,12 +37,14 @@ Tested across these versions to ensure consistent behavior.
 
 ---
 
-## Reference
+## 🔬 References
 
 This solver and its methodology are based on the approach developed in:
 
-**PaperXXX** — _[Your full paper title goes here]_  
-Please cite this paper if you use the solver in your research.
+**Comment on “Venturi nozzles for desalination brine discharges” [Amiri, N. S., Abessi, O., & Roberts, P. J., *Desalination*, Volume 573, 2024, 117193]**. _Desalination_, 574, 118105.  
+📄 [read here](https://doi.org/10.1016/j.desal.2024.118105)
+
+📌 _Please cite these papers if you use the solver in your research._
 
 ---
 
