@@ -2,8 +2,6 @@
 
 This repository contains a **custom OpenFOAM solver** developed for simulating **desalination outfalls** using a **non-dimensional formulation**. The solver is for dense jet flows, where buoyancy and momentum interact, as seen in brine discharges into ambient water bodies.
 
----
-
 ## Solver Overview
 
 This solver is based on the Navier-Stokes equations and scalar transport in **non-dimensional form**, using:
@@ -13,16 +11,12 @@ This solver is based on the Navier-Stokes equations and scalar transport in **no
 
 By working in a non-dimensional framework, this solver allows for **generalizable** and **scalable** analysis across different discharge configurations, flow regimes, and ambient conditions without being tied to a specific set of dimensional parameters.
 
----
-
 ## Features
 
 - Designed for **inclined dense jets**, such as those in desalination brine discharges.
 - Non-dimensional variables reduce complexity and enhance generalization.
 - Captures jet trajectory, mixing, and dilution.
 - Compatible with a wide range of OpenFOAM versions (see below).
-
----
 
 ## OpenFOAM Compatibility
 
@@ -35,16 +29,13 @@ The solver is fully functional with:
 
 Tested across these versions to ensure consistent behavior.
 
----
-
 ## References
 
 This solver and its methodology are based on the approach developed in:
 
 **Numerical simulation of desalination brine discharges: effects of inlet boundary conditions** Danial Goodarzi, Abdolmajid Mohammadian, Saleh Rezaeiravesh, _Desalination_, Under review.
 
-**Comment on “Venturi nozzles for desalination brine discharges” [Amiri, N. S., Abessi, O., & Roberts, P. J., *Desalination*, Volume 573, 2024, 117193]**. _Desalination_, 574, 118105.  
-📄 [read here](https://doi.org/10.1016/j.desal.2024.118105)
+**Comment on “Venturi nozzles for desalination brine discharges” [Amiri, N. S., Abessi, O., & Roberts, P. J., *Desalination*, Volume 573, 2024, 117193]**. _Desalination_, 574, 118105. [read here](https://doi.org/10.1016/j.desal.2024.118105)
 
 Please cite these papers if you use the solver in your research.
 
@@ -65,8 +56,6 @@ Please cite these papers if you use the solver in your research.
 
 The executable will be generated in your `$FOAM_USER_APPBIN`.
 
----
-
 ## Directory Structure
 
 ```
@@ -77,8 +66,6 @@ The executable will be generated in your `$FOAM_USER_APPBIN`.
 ├── pimpleDesalination.C
 ├── README.md
 ```
-
----
 
 ## Running a Simulation
 
@@ -93,8 +80,6 @@ Then run:
 ```bash
 pimpleDesalination
 ```
-
----
 
 ## Notes
 
