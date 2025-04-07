@@ -8,8 +8,8 @@ This repository contains a **custom OpenFOAM solver** developed for simulating *
 
 This solver is based on the Navier-Stokes equations and scalar transport in **non-dimensional form**, using:
 
-- **Reynolds number \( Re \)**: Characterizing inertial vs. viscous forces.
-- **Froude number \( Fr \)**: Capturing the ratio of inertial to buoyancy forces.
+- **Reynolds number \(Re\)**: Characterizing inertial vs. viscous forces.
+- **Froude number \(Fr\)**: Capturing the ratio of inertial to buoyancy forces.
 
 By working in a non-dimensional framework, this solver allows for **generalizable** and **scalable** analysis across different discharge configurations, flow regimes, and ambient conditions without being tied to a specific set of dimensional parameters.
 
