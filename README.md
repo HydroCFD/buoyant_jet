@@ -1,6 +1,6 @@
 # Ongoing Development – More Content Coming Later
 
-This repository contains research materials related to my PhD thesis on buoyant jets, including thermal and desalination discharges.
+This repository contains research materials related to my PhD thesis on buoyant jets, thermal and desalination discharges, including solvers, postprocessing codes and experimental data sets.
 
 <p align="center">
   <img src="images/temp.jpg" alt="Alt Text" width="800"/>
