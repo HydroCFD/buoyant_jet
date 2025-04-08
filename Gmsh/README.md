@@ -21,35 +21,35 @@ Before using this script, ensure you have the following installed:
 
 This Gmsh script is structured into several sections:
 
-### 🔹 Constants Definition
+### Constants Definition
 
 - Defines geometric parameters and **scaling factors**.
 - The **characteristic length scale is 1** (jet diameter = 1).
 - Ensures correct proportions for the computational domain.
 
-### 🔹 Box Dimensions
+### Box Dimensions
 
 - Defines the **bounding box** for around the jet.
 - Configures **jet boundaries, side openings, and distances**.
 
-### 🔹 Extrusion Parameters
+### Extrusion Parameters
 
 - Specifies **pipe length, domain height, and mesh refinement layers**.
 - Uses **structured mesh progression factors** for smooth refinement.
 
-### 🔹 Mesh Discretization
+### Mesh Discretization
 
 - Controls **element density** across different sections.
 - Uses **Transfinite curves and surfaces** for structured meshing.
 - Defines **progression factors** for refinement.
 
-### 🔹 Boundary Definitions
+### Boundary Definitions
 
 - Assigns **physical boundary names** for solvers (inlet, outlet, walls, pipe walls, etc.).
 
 ## How to Use the Script
 
-### **1️⃣ Running the Script in Gmsh**
+### ** Running the Script in Gmsh**
 
 #### **Option 1: Using the Gmsh GUI**
 
@@ -103,22 +103,22 @@ To use the mesh in **Nek5000**, follow these steps:
 
 ## Customizing the Mesh
 
-### 🔧 **Adjusting Domain Size**
+### **Adjusting Domain Size**
 
 - Modify `x1`, `x2`, `z1`, and `z2` to **change domain width and side openings**.
 - Modify `top` and `top2` to **adjust the height** of different regions.
 
-### 🔧 **Refining the Mesh**
+### **Refining the Mesh**
 
 - Increase `np1`, `np2`, `np3`, etc., to **increase mesh density**.
 - Modify `comp1`, `comp2`, etc., to **adjust mesh stretching**.
 
-### 🔧 **Changing Extrusion Lengths**
+### **Changing Extrusion Lengths**
 
 - Modify `down1` and `down2` to **extend or shorten the pipe region**.
 - Adjust `fex1`, `fex2` for **front and back extrusions**.
 
-### 📩 **Contact**
+### **Contact**
 
 <!-- For questions or support, feel free to **open an issue** or contact me via **[GitHub Discussions](https://github.com/yourusername/yourrepo/discussions)**. -->
 
