@@ -20,11 +20,17 @@ The repository includes:
 
 ## **Contributors**
 
+https://by.genie.uottawa.ca/~majid/
+
 - **Danial Goodarzi** – PhD Researcher in Fluid Mechanics and Environmental Hydraulics
 
   Lead developer and main contributor
 
   [Researchgate](https://www.researchgate.net/profile/Danial-Goodarzi)
+
+- **Majid Mohammadian** – Professor, Department of Civil Engineering
+  Supervisor
+  [University of Ottawa] (https://by.genie.uottawa.ca/~majid/)
 
 - **Collaborators**
   <!-- This project is conducted in collaboration with researchers at the University of Ottawa and the **National Research Council (NRC) Canada** -->
@@ -39,7 +45,7 @@ If you use this repository or any part of it in your research, please cite the f
 You can also cite the repository directly:
 
 ```bibtex
-@misc{goodarzi_buoyant_jet_repo,
+@misc{buoyant_jet,
   author       = {Danial Goodarzi},
   title        = {Buoyant Jet: CFD and Experimental Resources for Thermal and Desalination Discharges},
   year         = {2025},
