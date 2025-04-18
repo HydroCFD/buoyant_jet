@@ -24,18 +24,15 @@ The repository includes:
   [University of Ottawa](https://www.uottawa.ca/en)  
   Lead developer and main contributor
 
-- **Collaborators**  
-  This project is conducted in collaboration with researchers at the University of Ottawa and the **National Research Council (NRC) Canada**
+- **Collaborators**
+  <!-- This project is conducted in collaboration with researchers at the University of Ottawa and the **National Research Council (NRC) Canada** -->
 
 ## **Cite Our Work**
 
 If you use this repository or any part of it in your research, please cite the following related papers:
 
-1. _Goodarzi, D., Taherian, M., Mohammadian, A., & Saeidi Hosseini, S. A. R. (2025). "Advancing Desalination Outfall Design: Large Eddy Simulation of Inclined Dense Jets in Cross-Flow."_  
-   **Submitted to Journal of Desalination.**
-
-2. _Goodarzi, D., & Mohammadian, A. (2024). "Comment on 'Effect of numerical schemes on advection terms for large eddy simulation of inclined dense jets'."_  
-   [DOI link or arXiv/Zenodo to be added once available]
+1. _Goodarzi, D. (2024). "Comment on 'Venturi nozzles for desalination brine discharges' [Amiri, N. S., Abessi, O., & Roberts, P. J., Desalination, 573 (2024), 117193]."_  
+   [https://doi.org/10.1016/j.desal.2024.118105](https://doi.org/10.1016/j.desal.2024.118105)
 
 You can also cite the repository directly:
 
