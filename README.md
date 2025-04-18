@@ -21,7 +21,9 @@ The repository includes:
 ## **Contributors**
 
 - **Danial Goodarzi** – PhD Researcher in Fluid Mechanics and Environmental Hydraulics
+
   Lead developer and main contributor
+
   [Researchgate](https://www.researchgate.net/profile/Danial-Goodarzi)
 
 - **Collaborators**
