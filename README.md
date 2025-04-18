@@ -23,7 +23,7 @@ The repository includes:
 - **Danial Goodarzi**  
   _Ph.D. Researcher in Fluid Mechanics and Environmental Hydraulics_  
   Lead developer and main contributor to this repository.
-  [ResearchGate Profile](https://www.researchgate.net/profile/Danial-Goodarzi)
+  [ResearchGate](https://www.researchgate.net/profile/Danial-Goodarzi)
 
 - **Prof. Majid Mohammadian**  
   _Professor, Department of Civil Engineering, University of Ottawa_  
