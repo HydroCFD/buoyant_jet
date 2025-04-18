@@ -27,7 +27,7 @@ The repository includes:
 
 - **Prof. Abdolmajid Mohammadian**  
   _Professor, Department of Civil Engineering, University of Ottawa_  
-  Academic supervisor and research advisor for this project.
+  Academic supervisor and research advisor for this project.\_
   [University Profile](https://by.genie.uottawa.ca/~majid/)
 
 - **Collaborators**
