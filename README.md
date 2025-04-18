@@ -25,7 +25,7 @@ The repository includes:
   Lead developer and main contributor to this repository.
   [ResearchGate Profile](https://www.researchgate.net/profile/Danial-Goodarzi)
 
-- **Prof. Abdolmajid Mohammadian**  
+- **Prof. Majid Mohammadian**  
   _Professor, Department of Civil Engineering, University of Ottawa_  
   Academic supervisor and research advisor for this project.
   [University of Ottawa](https://by.genie.uottawa.ca/~majid/)
