@@ -20,9 +20,9 @@ The repository includes:
 
 ## **Contributors**
 
-- **Danial Goodarzi** – PhD Researcher in Fluid Mechanics and Environmental Hydraulics  
-  [Researchgate](https://www.researchgate.net/profile/Danial-Goodarzi)  
+- **Danial Goodarzi** – PhD Researcher in Fluid Mechanics and Environmental Hydraulics
   Lead developer and main contributor
+  [Researchgate](https://www.researchgate.net/profile/Danial-Goodarzi)
 
 - **Collaborators**
   <!-- This project is conducted in collaboration with researchers at the University of Ottawa and the **National Research Council (NRC) Canada** -->
