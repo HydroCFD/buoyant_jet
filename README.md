@@ -20,17 +20,15 @@ The repository includes:
 
 ## **Contributors**
 
-https://by.genie.uottawa.ca/~majid/
+- **Danial Goodarzi**  
+  _Ph.D. Researcher in Fluid Mechanics and Environmental Hydraulics_  
+  Lead developer and main contributor to this repository.
+  [ResearchGate Profile](https://www.researchgate.net/profile/Danial-Goodarzi)
 
-- **Danial Goodarzi** – PhD Researcher in Fluid Mechanics and Environmental Hydraulics
-
-  Lead developer and main contributor
-
-  [Researchgate](https://www.researchgate.net/profile/Danial-Goodarzi)
-
-- **Majid Mohammadian** – Professor, Department of Civil Engineering
-  Supervisor
-  [University of Ottawa] (https://by.genie.uottawa.ca/~majid/)
+- **Prof. Abdolmajid Mohammadian**  
+  _Professor, Department of Civil Engineering, University of Ottawa_  
+  Academic supervisor and research advisor for this project.
+  [University Profile](https://by.genie.uottawa.ca/~majid/)
 
 - **Collaborators**
   <!-- This project is conducted in collaboration with researchers at the University of Ottawa and the **National Research Council (NRC) Canada** -->
