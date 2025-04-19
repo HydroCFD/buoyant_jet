@@ -37,8 +37,7 @@ The repository includes:
 
 If you use this repository or any part of it in your research, please cite the following related papers:
 
-1. _Goodarzi, D. (2024). "Comment on 'Venturi nozzles for desalination brine discharges' [Amiri, N. S., Abessi, O., & Roberts, P. J., Desalination, 573 (2024), 117193]."_  
-   [https://doi.org/10.1016/j.desal.2024.118105](https://doi.org/10.1016/j.desal.2024.118105)
+1. _Goodarzi, D. (2024). "Comment on 'Venturi nozzles for desalination brine discharges' [Amiri, N. S., Abessi, O., & Roberts, P. J., Desalination, 573 (2024), 117193]."_[https://doi.org/10.1016/j.desal.2024.118105](https://doi.org/10.1016/j.desal.2024.118105)
 
 2. _Goodarzi, D., Mohammadian, A., Rezaeiravesh, S., (2025). Numerical simulation of desalination brine discharges: effects of inlet boundary conditions_, _Under review in Desalination_
 
