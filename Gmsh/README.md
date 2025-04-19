@@ -49,8 +49,6 @@ This Gmsh script is structured into several sections:
 
 ## How to Use the Script
 
-### ** Running the Script in Gmsh**
-
 #### **Option 1: Using the Gmsh GUI**
 
 1. Open **Gmsh** and load the `jet_mesh.geo` script.
@@ -65,7 +63,7 @@ gmsh -3 jet_mesh.geo
 
 - This generates a `.msh` file.
 
-### **2️⃣ Generating a 3D Mesh**
+### ** Generating a 3D Mesh**
 
 By default, the script generates a **2D mesh**:
 
