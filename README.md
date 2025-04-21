@@ -1,5 +1,6 @@
-<h1>Buoyant Jet and Desalination Discharges</h1>
-<p style="font-size:18px; font-weight:bold;">More Content Coming Later!</p>
+# Buoyant Jet and Desalination Discharges
+
+<span style="font-size:18px;"><strong>More Content Coming Later!</strong></span>
 
 <p>
   This repository contains research materials related to my <strong>PhD thesis on buoyant jets</strong>, with a specific focus on <strong>thermal and desalination discharges</strong> in coastal and shallow water environments.
