@@ -2,7 +2,16 @@
 
 **More Content Coming Later**
 
-This repository contains research materials related to my PhD thesis on buoyant jets, thermal and desalination discharges, including solvers, postprocessing codes and experimental data sets.
+<p>
+  This repository contains research materials related to my <strong>PhD thesis on buoyant jets</strong>, with a specific focus on <strong>thermal and desalination discharges</strong> in coastal and shallow water environments.
+  My research integrates <strong>high-fidelity numerical simulations</strong>—including <em>Direct Numerical Simulation (DNS)</em> and <em>Large Eddy Simulation (LES)</em> with experimental techniques such as <em>Laser-Induced Fluorescence (LIF)</em> and <em>Particle Image Velocimetry (PIV)</em> to investigate mixing, dilution, and turbulence structures in buoyant jets.
+</p>
+
+<p>
+  The goal is to improve understanding and predictive capabilities for <strong>environmental discharge behavior</strong>,
+  inform <strong>outfall design optimization</strong>, and support <strong>regulatory compliance</strong> in desalination and wastewater applications.
+  The repository includes solvers, postprocessing codes, mesh generation scripts, and experimental datasets.
+</p>
 
 <p align="center">
   <img src="images/temp.jpg" alt="Alt Text" width="800"/>
