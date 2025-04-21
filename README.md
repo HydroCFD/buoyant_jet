@@ -4,7 +4,7 @@
 
 <p>
   This repository contains research materials related to my <strong>PhD thesis on buoyant jets</strong>, with a specific focus on <strong>thermal and desalination discharges</strong> in coastal and shallow water environments.
-  My research integrates <strong>high-fidelity numerical simulations</strong>—including <em>Direct Numerical Simulation (DNS)</em> and <em>Large Eddy Simulation (LES)</em> with experimental techniques such as <em>Laser-Induced Fluorescence (LIF)</em> and <em>Particle Image Velocimetry (PIV)</em> to investigate mixing, dilution, and turbulence structures in buoyant jets.
+  My research integrates <strong>high-fidelity numerical simulations</strong>, including <em>Direct Numerical Simulation (DNS)</em> and <em>Large Eddy Simulation (LES)</em> with experimental techniques such as <em>Laser-Induced Fluorescence (LIF)</em> and <em>Particle Image Velocimetry (PIV)</em> to investigate mixing, dilution, and turbulence structures in buoyant jets.
 </p>
 
 <p>
