@@ -41,9 +41,6 @@ The repository includes:
   Academic supervisor and research advisor for this project.
   [University of Ottawa](https://by.genie.uottawa.ca/~majid/)
 
-- **Collaborators**
-  <!-- This project is conducted in collaboration with researchers at the University of Ottawa and the **National Research Council (NRC) Canada** -->
-
 ## **Cite Our Work**
 
 If you use this repository or any part of it in your research, please cite the following related papers:
