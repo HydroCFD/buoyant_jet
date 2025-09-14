@@ -29,15 +29,15 @@ The solver is fully functional with:
 
 Tested across these versions to ensure consistent behavior.
 
-## References
+<!-- ## References
 
 This solver and its methodology are based on the approach developed in:
 
-**Numerical simulation of desalination brine discharges: effects of inlet boundary conditions** Danial Goodarzi, Abdolmajid Mohammadian, Saleh Rezaeiravesh, _Desalination_, https://doi.org/10.1016/j.desal.2025.119389.
+**Numerical simulation of desalination brine discharges: effects of inlet boundary conditions** Danial Goodarzi, Abdolmajid Mohammadian, Saleh Rezaeiravesh, _Desalination_, [read here](https://doi.org/10.1016/j.desal.2025.119389)
 
 **Comment on “Venturi nozzles for desalination brine discharges” [Amiri, N. S., Abessi, O., & Roberts, P. J., *Desalination*, Volume 573, 2024, 117193]**. _Desalination_, 574, 118105. [read here](https://doi.org/10.1016/j.desal.2024.118105)
 
-Please cite these papers if you use the solver in your research.
+Please cite these papers if you use the solver in your research. -->
 
 ## How to Compile (# Replace X with your version)
 
