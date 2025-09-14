@@ -33,7 +33,7 @@ Tested across these versions to ensure consistent behavior.
 
 This solver and its methodology are based on the approach developed in:
 
-**Numerical simulation of desalination brine discharges: effects of inlet boundary conditions** Danial Goodarzi, Abdolmajid Mohammadian, Saleh Rezaeiravesh, _Desalination_, Under review.
+**Numerical simulation of desalination brine discharges: effects of inlet boundary conditions** Danial Goodarzi, Abdolmajid Mohammadian, Saleh Rezaeiravesh, _Desalination_, https://doi.org/10.1016/j.desal.2025.119389.
 
 **Comment on “Venturi nozzles for desalination brine discharges” [Amiri, N. S., Abessi, O., & Roberts, P. J., *Desalination*, Volume 573, 2024, 117193]**. _Desalination_, 574, 118105. [read here](https://doi.org/10.1016/j.desal.2024.118105)
 
