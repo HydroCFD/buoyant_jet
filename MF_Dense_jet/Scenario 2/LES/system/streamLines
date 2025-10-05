@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+streamLines
+{
+
+    libs            ("libfieldFunctionObjects.so");
+    type            streamLine;
+    writeControl    writeTime;
+    // writeInterval 10;
+    setFormat       vtk; 
+    direction       forward;
+    fields (p U k);
+    lifeTime        10000;
+
+        // trackLength 1e-3;
+        nSubCycle 5;
+    cloudName       particleTracks;
+
+    seedSampleSet
+    {
+        type        lineUniform;
+        axis        x;  // distance;
+        start       (-1.001 -0.05 0.0011);
+        end         (-1.001 -0.05 1.0011);
+        nPoints     20;
+    }
+}
+
+
+// ************************************************************************* //

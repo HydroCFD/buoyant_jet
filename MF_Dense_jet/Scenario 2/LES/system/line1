@@ -1,0 +1,291 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      sample;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+    line
+    {
+		type       sets;
+		libs              ("libsampling.so");
+		writeControl      runTime;
+		writeInterval      1;
+		interpolationScheme   cell; //cell cellPoint cellPointFace pointMVC cellPatchConstrained
+		setFormat          raw;
+  sets
+  (
+      line1
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (0.0 20.0 0.0);
+          end     (0.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+      line2
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (5.0 20.0 0.0);
+          end     (5.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+      line3
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (10.0 20.0 0.0);
+          end     (10.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+      line4
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (15.0 20.0 0.0);
+          end     (15.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+      line5
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (20.0 20.0 0.0);
+          end     (20.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+
+      line6
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (25.0 20.0 0.0);
+          end     (25.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+      line7
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (30.0 20.0 0.0);
+          end     (30.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+
+
+      line8
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (40.0 20.0 0.0);
+          end     (40.0 -20 0.0);
+          nPoints 200; //number of mesh
+      }
+
+
+
+      line9
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (45.0 20.0 0.0);
+          end     (45.0 -20 0.0);
+          nPoints 200;
+      }
+
+
+
+
+      line9
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (45.0 20.0 0.0);
+          end     (45.0 -20 0.0);
+          nPoints 200;
+      }
+
+
+      line9
+      {
+          type    lineFace; //lineUniform lineFace
+          axis    y; //distance
+          start   (45.0 20.0 0.0);
+          end     (45.0 -20 0.0);
+          nPoints 200;
+      }
+
+
+
+	line9
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (45.0 20.0 0.0);
+		end     (45.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line10
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (50.0 20.0 0.0);
+		end     (50.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line11
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (55.0 20.0 0.0);
+		end     (55.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line12
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (60.0 20.0 0.0);
+		end     (60.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line13
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (65.0 20.0 0.0);
+		end     (65.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line14
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (70.0 20.0 0.0);
+		end     (70.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line15
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (75.0 20.0 0.0);
+		end     (75.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line16
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (80.0 20.0 0.0);
+		end     (80.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line17
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (85.0 20.0 0.0);
+		end     (85.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line18
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (90.0 20.0 0.0);
+		end     (90.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line19
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (95.0 20.0 0.0);
+		end     (95.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line20
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (100.0 20.0 0.0);
+		end     (100.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line21
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (105.0 20.0 0.0);
+		end     (105.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line22
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (110.0 20.0 0.0);
+		end     (110.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line23
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (115.0 20.0 0.0);
+		end     (115.0 -20 0.0);
+		nPoints 200;
+	}
+
+	line24
+	{
+		type    lineFace; //lineUniform lineFace
+		axis    y; //distance
+		start   (120.0 20.0 0.0);
+		end     (120.0 -20 0.0);
+		nPoints 200;
+	}
+
+
+
+  );
+
+  fields          (T U TMean UMean);
+    }
+
+// ************************************************************************* //
+

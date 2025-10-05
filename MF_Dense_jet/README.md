@@ -17,20 +17,24 @@ This work develops and evaluates a **multi-fidelity Gaussian Process (MFGP) fram
 - **High-fidelity (HF):** LES simulations
 - **True/top-level (T):** Experimental PIV/LIF measurements
 
-The Bayesian hierarchical framework co-conditions LF and HF numerical predictions with experimental data to achieve robust and computationally efficient surrogate models.
+The numerical simulations (LF and HF) are carried out using a **custom OpenFOAM solver**:  
+👉 [`pimpleDesalination`](https://github.com/HydroCFD/buoyant_jet/tree/main/OpenFOAM/Solver/pimpleDesalination), developed and maintained in the [HydroCFD/buoyant_jet](https://github.com/HydroCFD/buoyant_jet) repository.
+
+This solver is the main CFD engine for generating the datasets used in the present multi-fidelity framework.
 
 ---
 
 ## 🔑 Features
 
 - Three-level **Bayesian Hierarchical Co-Kriging** (HC-MFM) framework
-- LES and RANS datasets of inclined dense jets (Fr, Re, d₀ cases)
+- LES and RANS datasets generated with `pimpleDesalination`
+- Posterior calibration with experimental data
 - Python scripts for:
   - Data preprocessing
   - Model calibration
-  - Posterior prediction & uncertainty quantification
-  - RMSE and error statistics
-  - Publication-quality plots (Matplotlib + LaTeX styling)
+  - Prediction & uncertainty quantification
+  - RMSE/error statistics
+  - Publication-quality plots (Matplotlib + LaTeX)
 
 ---
 

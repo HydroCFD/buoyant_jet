@@ -1,0 +1,280 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+application     pisoDensityND2;
+startFrom       latestTime;
+startTime       0;
+stopAt          endTime;
+endTime         100000;
+deltaT          0.001;
+writeControl    adjustableRunTime;
+writeInterval   10;
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  6;
+writeCompression on;
+timeFormat      general;
+timePrecision   6;
+runTimeModifiable true;
+adjustTimeStep  yes;
+maxCo           1;
+
+functions
+{
+
+
+   #include "surface1"
+
+
+
+    #include "calcBudgets"
+
+
+   #include "surface2"
+
+    fieldAverage1
+    {
+     type            fieldAverage;
+     libs            (fieldFunctionObjects);
+     enabled         true;
+     log             true;
+     timeStart       250;
+     timeEnd         300000;
+     writeControl    adjustableRunTime;
+     writeInterval   $writeInterval;
+
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            T
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            p
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+            kTot
+            {
+                mean        on;
+                prime2Mean  off;
+                base        time;
+            }
+
+            LESResIndex
+            {
+                mean        on;
+                prime2Mean  off;
+                base        time;
+            }
+		
+        );
+    }
+
+
+
+	subtract1
+	{
+	    // Mandatory entries (unmodifiable)
+	    type            subtract;
+	    libs            (fieldFunctionObjects);
+	    fields          (U UMean);
+
+	    // Optional (inherited) entries
+	    result          UP;
+	    enabled         true;
+	    log             true;
+  	    timeStart       250;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+	subtract2
+	{
+	    type            subtract;
+	    libs            (fieldFunctionObjects);
+	    fields          (T TMean);
+
+	    // Optional (inherited) entries
+	    result          TP;
+	    enabled         true;
+	    log             true;
+  	    timeStart       250;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+
+	pow1
+	{
+	    type            pow;
+	    libs            (fieldFunctionObjects);
+	    field           TP;
+	    n               2;
+	    result          TPTP;
+	    enabled         true;
+	    pow             true;
+  	    timeStart       250;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+
+	multiply1
+	{
+	    // Mandatory entries
+	    type            multiply;
+	    libs            (fieldFunctionObjects);
+	    fields          (TP UP);
+
+	    // Optional (inherited) entries
+	    result          TPUP;
+	    region          region0;
+	    enabled         true;
+	    log             true;
+  	    timeStart       250;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+
+    fieldAverage2
+    {
+     type            fieldAverage;
+     libs            (fieldFunctionObjects);
+     enabled         true;
+     log             true;
+     timeStart       400;
+     timeEnd         300000;
+     writeControl    adjustableRunTime;
+     writeInterval   $writeInterval;
+
+        fields
+        (
+            TPUP
+            {
+                mean        on;
+                prime2Mean  off;
+                base        time;
+            }
+
+
+
+
+		
+        );
+    }
+
+
+
+
+
+
+
+
+
+	Q1
+	{
+	    // Mandatory entries (unmodifiable)
+	    type            Q;
+	    libs            (fieldFunctionObjects);
+
+	    // Optional (inherited) entries
+	    region          region0;
+	    enabled         true;
+	    log             true;
+  	    timeStart       0;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+
+	Lambda21
+	{
+	    // Mandatory entries (unmodifiable)
+	    type            Lambda2;
+	    libs            (fieldFunctionObjects);
+
+	    // Optional (inherited) entries
+	    region          region0;
+	    enabled         true;
+	    log             true;
+  	    timeStart       0;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+	LambVector1
+	{
+	    // Mandatory entries (unmodifiable)
+	    type        LambVector;
+	    libs        (fieldFunctionObjects);
+
+	    // Optional (inherited) entries
+	    region          region0;
+	    enabled         true;
+	    log             true;
+  	    timeStart       0;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+
+
+	yPlus1
+	{
+	    // Mandatory entries
+	    type            yPlus;
+	    libs            (fieldFunctionObjects);
+	    // Optional (inherited) entries
+	    writePrecision  10;
+	    writeToFile     true;
+	    useUserTime     true;
+	    // Optional (inherited) entries
+	    region          region0;
+	    enabled         true;
+	    log             true;
+  	    timeStart       0;
+            timeEnd         300000;
+            writeControl    adjustableRunTime;
+            writeInterval   $writeInterval;
+	}
+
+
+
+
+
+
+
+
+}
+
+// ************************************************************************* //

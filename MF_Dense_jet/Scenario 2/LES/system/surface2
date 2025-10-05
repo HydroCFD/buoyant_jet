@@ -1,0 +1,74 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+sample2
+{
+    type            surfaces;
+    libs            ("libsampling.so");
+    writeControl    adjustableRunTime;
+    timeStart       251;
+    timeEnd         300000;
+    writeInterval   1;
+    surfaceFormat   vtk;
+    fields          ( UMean TMean UPrime2Mean TPrime2Mean kTotMean LESResIndexMean CuiMean GcpMean uiCuiMean uiGcpMean uiLuiMean uiujMean djuiMean djuidjuiMean LuiMean uiLuiMean);
+    interpolationScheme cellPoint;
+    surfaces
+    (
+        surface1
+        {
+            type            cuttingPlane;
+            planeType       pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0 0 0);
+                normal  (0 0 1);
+            }
+            interpolate     true;
+        }
+
+        surface2
+        {
+            type            cuttingPlane;
+            planeType       pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0 0 0);
+                normal  (1 0 0);
+            }
+            interpolate     true;
+        }
+        surface3
+        {
+            type            cuttingPlane;
+            planeType       pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0 0 0);
+                normal  (1 0 1);
+            }
+            interpolate     true;
+        }
+
+        surface4
+        {
+            type            cuttingPlane;
+            planeType       pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0 0 0);
+                normal  (-1 0 1);
+            }
+            interpolate     true;
+        }
+
+
+
+    );
+
+}
+
+// ************************************************************************* //
