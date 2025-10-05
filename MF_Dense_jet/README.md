@@ -1,40 +1,52 @@
-# Multi-Fidelity Modeling of Buoyant Jets
+# Multi-Fidelity Modeling of Buoyant Jets and Desalination Discharges
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-This repository contains the data, codes, and scripts associated with the paper:
+This repository contains codes, datasets, and scripts associated with the paper:
 
-> **Multifidelity Numerical Modeling and Bayesian Hierarchical Prediction of Desalination Discharges**  
-> D. Goodarzi, M. Mohammadian, et al. (2025). _Submitted to Desalination._
+> **Multifidelity Numerical Modeling and Bayesian Hierarchical Prediction of the Desalination Discharges**  
+> D. Goodarzi, A. Mohammadian (2025). _Submitted to Desalination._
 
 ---
 
 ## 📖 Overview
 
-This work develops and evaluates a **multi-fidelity Gaussian Process (MFGP) framework** for predicting the mixing and dilution of buoyant jets in shallow ambient environments.
+This work develops a **Bayesian hierarchical multi-fidelity Gaussian Process (MFGP) framework** to predict the dynamics of buoyant jets and desalination discharges under shallow ambient conditions.
 
 - **Low-fidelity (LF):** RANS simulations
 - **High-fidelity (HF):** LES simulations
-- **True/top-level (T):** Experimental PIV/LIF measurements
+- **True values (TV):** Experimental validation (PIV, LIF)
 
-The numerical simulations (LF and HF) are carried out using a **custom OpenFOAM solver**:  
-👉 [`pimpleDesalination`](https://github.com/HydroCFD/buoyant_jet/tree/main/OpenFOAM/Solver/pimpleDesalination), developed and maintained in the [HydroCFD/buoyant_jet](https://github.com/HydroCFD/buoyant_jet) repository.
+The numerical datasets are generated using the **custom OpenFOAM solver** 👉 [`pimpleDesalination`](https://github.com/HydroCFD/buoyant_jet/tree/main/OpenFOAM/Solver/pimpleDesalination), which extends `pimpleFoam` to include coupled advection–diffusion equations for salinity/temperature transport. This solver is the main CFD engine for both RANS and LES cases reported in the paper.
 
-This solver is the main CFD engine for generating the datasets used in the present multi-fidelity framework.
+The multi-fidelity framework leverages the computational efficiency of RANS, the physical accuracy of LES, and validation against PIV/LIF measurements to deliver robust surrogate models with quantified uncertainty.
 
 ---
 
-## 🔑 Features
+## 🔑 Key Contributions
 
-- Three-level **Bayesian Hierarchical Co-Kriging** (HC-MFM) framework
-- LES and RANS simulation cases
-- Posterior calibration with experimental data
-- Python scripts for:
-  - Data preprocessing
-  - Model calibration
-  - Prediction & uncertainty quantification
-  - RMSE/error statistics
-  - Publication-quality plots (Matplotlib + LaTeX)
+- **Scenario 1:** 60° inclined desalination jet in shallow ambient
+
+  - 24 RANS (LF) + 11 LES (TV), with 4 LES selected as HF
+  - LES validated against high-resolution **PIV** data
+  - Predictions of **surface dilution**, **return point dilution**, and **horizontal displacement**
+
+- **Scenario 2:** Vertical thermal jet
+
+  - RANS (LF), LES (HF), and **LIF experimental** data (TV)
+  - Predictions of **concentration fields** under varying Frd
+
+- **Bayesian Hierarchical MFGP model**
+
+  - Three-level structure (LF → HF → TV)
+  - RW–Metropolis MCMC inference
+  - Anisotropic Matérn-5/2 kernels with ARD
+  - Provides predictive means, variances, and 95% credible intervals
+
+- **Computational savings:**
+  - LES required O(10⁴–10⁵) CPU hours for statistically converged results
+  - RANS required O(10¹–10²) CPU hours
+  - MFGP achieves LES-level accuracy with a fraction of the cost
 
 ---
 
