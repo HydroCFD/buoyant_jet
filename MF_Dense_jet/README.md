@@ -27,7 +27,7 @@ This solver is the main CFD engine for generating the datasets used in the prese
 ## 🔑 Features
 
 - Three-level **Bayesian Hierarchical Co-Kriging** (HC-MFM) framework
-- LES and RANS datasets generated with `pimpleDesalination`
+- LES and RANS simulation cases
 - Posterior calibration with experimental data
 - Python scripts for:
   - Data preprocessing
