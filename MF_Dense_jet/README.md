@@ -1,6 +1,6 @@
 # Multi-Fidelity Modeling of Buoyant Jets and Desalination Discharges
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) -->
 
 This repository contains codes, datasets, and scripts associated with the paper:
 
