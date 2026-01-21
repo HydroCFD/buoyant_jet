@@ -1,4 +1,4 @@
-# Buoyant Jet and Desalination Discharges
+# Thermal Jet and Desalination Discharges
 
 <span style="font-size:18px;"><strong>More Content Coming Later!</strong></span>
 
@@ -16,7 +16,7 @@
 <p align="center">
   <img src="images/temp.jpg" alt="Alt Text" width="800"/>
   <br>
-  <em>Figure: Scalar field of a jet.</em>
+  <em>Figure: Concentration field of thermal jet using Direct numerical simulation (DNS).</em>
 </p>
 
 ## **Contents**
