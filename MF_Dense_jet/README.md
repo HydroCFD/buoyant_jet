@@ -1,4 +1,4 @@
-# Multi-Fidelity Modeling of Buoyant Jets and Desalination Discharges
+# Multi-Fidelity Modeling of Thermal Jets and Desalination Discharges
 
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) -->
 
@@ -26,18 +26,15 @@ The multi-fidelity framework leverages the computational efficiency of RANS, the
 ## 🔑 Key Contributions
 
 - **Scenario 1:** 60° inclined desalination jet in shallow ambient
-
   - 24 RANS (LF) + 11 LES (TV), with 4 LES selected as HF
   - LES validated against high-resolution **PIV** data
   - Predictions of **surface dilution**, **return point dilution**, and **horizontal displacement**
 
 - **Scenario 2:** Vertical thermal jet
-
   - RANS (LF), LES (HF), and **LIF experimental** data (TV)
   - Predictions of **concentration fields** under varying Frd
 
 - **Bayesian Hierarchical MFGP model**
-
   - Three-level structure (LF → HF → TV)
   - RW–Metropolis MCMC inference
   - Anisotropic Matérn-5/2 kernels with ARD
